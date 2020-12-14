@@ -49,7 +49,7 @@ public class CardOrderTest {
         $("[data-test-id=name] input").setValue("Хазова Любовь");
         $("[data-test-id=agreement]").click();
         $("button").click();
-        $("[data-test-id=name].input_invalid .input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
+        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
 
     }
 
@@ -58,7 +58,7 @@ public class CardOrderTest {
         $("[data-test-id=phone] input").setValue("+11111111111");
         $("[data-test-id=agreement]").click();
         $("button").click();
-        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
+        $("[data-test-id=name].input_invalid .input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
     }
 
     @Test
